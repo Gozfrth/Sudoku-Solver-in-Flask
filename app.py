@@ -20,9 +20,7 @@ def test():
 
     # Solve the Sudoku puzzle
     solution_grid = mymod.sol(grid)
-    
     response = jsonify(solution=solution_grid)
-    response.headers.add('Access-Control-Allow-Origin', 'http://127.0.0.1:5000')
 
     return response
 
