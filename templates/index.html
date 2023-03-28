@@ -4,6 +4,27 @@
     <meta charset="UTF-8">
     <title>Sudoku Solver</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+        h1{
+            font-family: 'Questrial', sans-serif;
+            text-align: center;
+        }
+        .header{
+            margin: 0;
+            background-color: wheat;
+        }
+        .container {
+        height: 2em;
+        position: relative;
+        }
+
+        .vertical-center {
+        margin-top: 2em;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        }
         .whole{
             margin-top: auto;
             margin-left:auto;
@@ -13,6 +34,14 @@
         }
         input{
             text-align: center;
+        }
+        button{
+            font-family: 'Questrial', sans-serif;
+            height:2em;
+            border-radius: 2px;
+            width:auto;
+            border: 2px solid black;
+            background-color: whitesmoke;
         }
         input[type=text]{
             width:2em;
@@ -33,7 +62,9 @@
 </head>
 
 <body>
-
+<div class = "header">
+<h1>SUDOKU SOLVER</h1>
+</div>
 <table class="whole">
     <tr>
         <td>
@@ -217,9 +248,17 @@
 
 </table>
 
+<div class="container">
+<div class="vertical-center"> 
 <button type="submit" onclick="myfunction();">Submit</button>
-<br>
-<button type="reset" onclick="reset();">reset</button>
+</div>
+</div>
+<div class="container">
+<div class="vertical-center"> 
+<button type="reset" onclick="reset();">Reset</button>
+</div>
+</div>
+
 
 </body>
 </html>
