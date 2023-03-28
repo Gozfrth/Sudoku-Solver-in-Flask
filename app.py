@@ -24,7 +24,7 @@ def test():
     response = jsonify(solution=solution_grid)
     response.headers.add('Access-Control-Allow-Origin', 'http://127.0.0.1:5000')
 
-    return jsonify(solution=solution_grid)
+    return response
 
 
 if __name__ == '__main__':
