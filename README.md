@@ -1,4 +1,4 @@
-# Sudoku Solver in Flask using Backtracking
+# Sudoku Solver in Flask using Backtracking.
 
 ---
 
@@ -152,7 +152,7 @@ def test():
 
 In `app.py`, The route `'/'` returns the HTML file `index.html` in the `static` folder using the render_template function from Flask. The POST request is a route `'/test'` that accepts a JSON object from the Javascript AJAX request. The `mymod.sol()` function is called to solve the puzzle, and the solution is returned as a JSON response to Javascript using the jsonify function from Flask.
 
-Now all thats left to do is to show the solved grid in the App. This can be done using 
+Now all thats left to do is to show the solved grid in the App. This can be done by using a for loop and iterating through all rows and columns.
 ```Javascript
 document.getElementById(temp).value = solution[i][j];
 ```
