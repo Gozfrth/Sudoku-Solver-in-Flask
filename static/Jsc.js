@@ -35,3 +35,12 @@ function myfunction() {
         }
     });
 }
+
+function reset(){
+    for (let i = 0; i < 9; i++) {
+        for (let j = 0; j < 9; j++) {
+            temp = i +''+j;
+            document.getElementById(temp).value = '';
+        }
+    }
+}
