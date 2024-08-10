@@ -13,28 +13,40 @@ git clone https://github.com/Gozfrth/Sudoku.git
 >2. Move into the project folder.
 
 ```
-cd Sudoku
+cd Sudoku-Solver-in-Flask/
 ```
 
 >3. Create virtual environment.
 
-```python
+```
 python -m venv env
 ```
 
->4. Install requirements.
+>4. Activate the virtual environment.
+
+On Ubuntu
+```
+source env/Scripts/activate
+```
+
+On Windows
+```
+env\Scripts\activate.bat
+```
+
+>5. Install requirements.
 
 ```
 pip install -r requirements.txt
 ```
 
->5. Run the Flask app.
+>6. Run the Flask app.
 
 ```
 flask run
 ```
 
->6. Now open your web browser and go to http://localhost:5000/ to view the app.
+>7. Now open your web browser and go to http://localhost:5000/ to view the app.
 
 ---
 
